@@ -10,5 +10,5 @@ export default function handler(
   res: NextApiResponse<Data>,
   han: NextApiHandler<NextApiHandler>
 ) {
-  res.status(200).json({ name: "hello motherfucker" });
+  res.status(200).json({ name: "hello" });
 }
