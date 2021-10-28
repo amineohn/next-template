@@ -4,12 +4,12 @@ import useSWR from "swr";
 import Loading from "../components/Loading";
 import fetcher from "../libs/fetcher";
 import { Example } from "../libs/types";
-
+import FadeIn from "react-fade-in";
 const Home: NextPage = () => {
   const { data } = useSWR<Example>(`/api/example`, fetcher);
   return (
     <>
-      <div className="flex flex-col justify-center px-8 my-36 overflow-hidden">
+      <FadeIn className="flex flex-col justify-center px-8 my-36 overflow-hidden">
         <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16 dark:text-white">
           <div className="flex-col items-center">
             <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-coolGray-900 to-warmGray-600 dark:bg-gradient-to-bl dark:from-blue-400 dark:to-blue-600">
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
                 data-interception="off"
               >
                 {data ? (
-                  data?.name
+                  <FadeIn>{data?.name}</FadeIn>
                 ) : (
                   <>
                     <Loading />
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </FadeIn>
     </>
   );
 };
