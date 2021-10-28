@@ -7,7 +7,8 @@ import { Example } from "../libs/types";
 
 const Home: NextPage = () => {
   const { data } = useSWR<Example>(`/api/example`, fetcher);
-  //https://api.lanyard.rest/v1/users/366670764939804672
+  //https://api.lanyard.rest/v1/users/366670764939804672 only for test purpose
+
   return (
     <>
       <div className="flex flex-col justify-center px-8 my-36 overflow-hidden">
