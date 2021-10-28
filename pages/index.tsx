@@ -1,15 +1,15 @@
 import type { NextPage } from "next";
-//import dynamic from "next/dynamic";
-/*const ToggleTheme = dynamic(() => import("../components/toggleTheme"), {
-  ssr: false,
-});*/
+import React from "react";
+import useSWR from "swr";
+
 const Home: NextPage = () => {
+  const { data } = useSWR(`/api/example`);
   return (
     <>
       <div className="flex flex-col justify-center px-8 my-60 overflow-hidden">
         <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16 dark:text-white">
           <div className="flex-col items-center">
-            <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-coolGray-900 to-warmGray-600 dark:bg-gradient-to-t dark:from-indigo-200 dark:to-indigo-400">
+            <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-coolGray-900 to-warmGray-600 dark:bg-gradient-to-bl dark:from-blue-400 dark:to-blue-600">
               Template NextJS
             </h1>
             <div className="mb-8">
@@ -17,6 +17,12 @@ const Home: NextPage = () => {
                 Simple template with NextJS, Tailwind, React ALPHA 18,
                 TypeScript
               </p>
+            </div>
+            <div className="w-full overflow-hidden metric-card max-w-72 bg-gray-100 dark:bg-gray-900 bg-opacity-50 dark:bg-opacity-50 md:bg-opacity-100 rounded-2xl p-4">
+              <div className="flex items-center font-bold text-gray-900 dark:text-gray-100">
+                API Tests
+              </div>
+              <p className="mt-2 text-sm font-medium text-gray-800 spacing-sm dark:text-white"></p>
             </div>
             <div className="flex flex-col w-full overflow-y-scroll h-96">
               <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
@@ -37,6 +43,7 @@ const Home: NextPage = () => {
                     </p>
                   </div>
                 </a>
+
                 <a
                   href="https://tailwindcss.com/"
                   target="_blank"
@@ -48,7 +55,7 @@ const Home: NextPage = () => {
                     </div>
                     <p className="mt-2 text-sm font-medium text-gray-800 spacing-sm dark:text-white">
                       A utility-first CSS framework packed with classes like
-                      <code className="bg-gray-600 rounded-xl bg-opacity-50 p-0.5">
+                      <code className="bg-blue-500 font-sm text-white rounded-xl bg-opacity-100 p-1 ml-0.5">
                         flex, pt-4, text-center
                       </code>{" "}
                       and <br />

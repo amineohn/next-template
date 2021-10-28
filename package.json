@@ -12,7 +12,9 @@
     "next": "^12.0.1",
     "next-themes": "^0.0.15",
     "react": "^18.0.0-alpha-6c3dcc7a4-20211027",
-    "react-dom": "^18.0.0-alpha-6c3dcc7a4-20211027"
+    "react-dom": "^18.0.0-alpha-6c3dcc7a4-20211027",
+    "swr": "^1.0.1",
+    "unfetch": "^4.2.0"
   },
   "devDependencies": {
     "@types/node": "16.11.6",
