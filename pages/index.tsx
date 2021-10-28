@@ -20,7 +20,7 @@ const Home: NextPage = () => {
             </div>
             <div className="flex flex-col w-full overflow-y-scroll h-96">
               <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
-                <a href="https://nextjs.org/" target="_blank">
+                <a href="https://nextjs.org/" target="_blank" rel="noopener">
                   <div className="w-full overflow-hidden transition transform metric-card max-w-72 hover:scale-95 bg-gray-100 dark:bg-gray-900 bg-opacity-50 dark:bg-opacity-50 md:bg-opacity-100 rounded-2xl p-4">
                     <div className="flex items-center font-bold text-gray-900 dark:text-gray-100">
                       NextJS
@@ -33,7 +33,11 @@ const Home: NextPage = () => {
                     </p>
                   </div>
                 </a>
-                <a href="https://tailwindcss.com/" target="_blank">
+                <a
+                  href="https://tailwindcss.com/"
+                  target="_blank"
+                  rel="noopener"
+                >
                   <div className="w-full overflow-hidden transition transform metric-card max-w-72 hover:scale-95 bg-gray-100 dark:bg-gray-900 bg-opacity-50 dark:bg-opacity-50 md:bg-opacity-100 rounded-2xl p-4">
                     <div className="flex items-center font-bold text-gray-900 dark:text-gray-100">
                       Tailwind
@@ -49,7 +53,7 @@ const Home: NextPage = () => {
                     </p>
                   </div>
                 </a>
-                <a href="https://reactjs.org/" target="_blank">
+                <a href="https://reactjs.org/" target="_blank" rel="noopener">
                   <div className="w-full overflow-hidden transition transform metric-card max-w-72 hover:scale-95 bg-gray-100 dark:bg-gray-900 bg-opacity-50 dark:bg-opacity-50 md:bg-opacity-100 rounded-2xl p-4">
                     <div className="flex items-center font-bold text-gray-900 dark:text-gray-100">
                       React
@@ -59,7 +63,11 @@ const Home: NextPage = () => {
                     </p>
                   </div>
                 </a>
-                <a href="https://www.typescriptlang.org/" target="_blank">
+                <a
+                  href="https://www.typescriptlang.org/"
+                  target="_blank"
+                  rel="noopener"
+                >
                   <div className="w-full overflow-hidden transition transform metric-card max-w-72 hover:scale-95 bg-gray-100 dark:bg-gray-900 bg-opacity-50 dark:bg-opacity-50 md:bg-opacity-100 rounded-2xl p-4">
                     <div className="flex items-center font-bold text-gray-900 dark:text-gray-100">
                       TypeScript
