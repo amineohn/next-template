@@ -1,15 +1,15 @@
 import type { NextPage } from "next";
 import React from "react";
 import useSWR from "swr";
+import Loading from "../components/Loading";
 import fetcher from "../libs/fetcher";
 import { Example } from "../libs/types";
 
 const Home: NextPage = () => {
   const { data } = useSWR<Example>(`/api/example`, fetcher);
-
   return (
     <>
-      <div className="flex flex-col justify-center px-8 my-60 overflow-hidden">
+      <div className="flex flex-col justify-center px-8 my-36 overflow-hidden">
         <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16 dark:text-white">
           <div className="flex-col items-center">
             <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-coolGray-900 to-warmGray-600 dark:bg-gradient-to-bl dark:from-blue-400 dark:to-blue-600">
@@ -25,34 +25,15 @@ const Home: NextPage = () => {
               <div className="flex items-center font-bold text-gray-900 dark:text-gray-100">
                 API Hello
               </div>
-              <p className="mt-2 text-sm font-medium text-gray-800 spacing-sm dark:text-white">
+              <p
+                className="mt-2 text-sm font-medium text-gray-800 spacing-sm dark:text-white"
+                data-interception="off"
+              >
                 {data ? (
-                  data.name
+                  data?.name
                 ) : (
                   <>
-                    <div className="flex space-x-1">
-                      <svg
-                        className="animate-spin h-5 w-5 text-gray-900 dark:text-gray-100"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <circle
-                          className="opacity-25"
-                          cx="12"
-                          cy="12"
-                          r="10"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                        />
-                        <path
-                          className="opacity-75"
-                          fill="currentColor"
-                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                        />
-                      </svg>
-                      <span>loading..</span>
-                    </div>
+                    <Loading />
                   </>
                 )}
               </p>
