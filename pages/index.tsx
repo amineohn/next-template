@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import dynamic from "next/dynamic";
+//import dynamic from "next/dynamic";
 /*const ToggleTheme = dynamic(() => import("../components/toggleTheme"), {
   ssr: false,
 });*/
