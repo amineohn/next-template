@@ -107,32 +107,26 @@ const Home: NextPage = () => {
                 </a>
               </div>
             </div>
-            <a
-              href="https://tailwindcss.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="w-full overflow-hidden transition transform metric-card max-w-72 hover:scale-95 bg-gray-100 dark:bg-white bg-opacity-50 dark:bg-opacity-20 rounded-2xl p-4">
-                <div className="flex items-center font-bold text-gray-900 dark:text-gray-100">
-                  Any issue?
-                </div>
-                <p className="mt-2 text-sm font-medium text-gray-800 spacing-sm dark:text-white">
-                  <div className="space-y-2 inline ">
-                    Please report issue on Github.
-                    <br />
-                    <button className="bg-white transition bg-opacity-10 hover:bg-opacity-20 p-2 rounded-lg">
-                      <a
-                        href="https://github.com/amineohn/next-template/issues"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Here
-                      </a>
-                    </button>
-                  </div>
-                </p>
+            <div className="w-full overflow-hidden metric-card max-w-72 bg-gray-100 dark:bg-white bg-opacity-50 dark:bg-opacity-20 rounded-2xl p-4">
+              <div className="flex items-center font-bold text-gray-900 dark:text-gray-100">
+                Any issue?
               </div>
-            </a>
+              <p className="mt-2 text-sm font-medium text-gray-800 spacing-sm dark:text-white">
+                <div className="space-y-2 inline ">
+                  Please report issue on Github.
+                  <br />
+                  <button className="bg-white transition bg-opacity-10 hover:bg-opacity-20 p-2 rounded-lg">
+                    <a
+                      href="https://github.com/amineohn/next-template/issues"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Here
+                    </a>
+                  </button>
+                </div>
+              </p>
+            </div>
           </div>
         </div>
       </FadeIn>
