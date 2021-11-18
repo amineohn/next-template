@@ -120,7 +120,7 @@ const Home: NextPage = () => {
                   <div className="space-y-2 inline ">
                     Please report issue on Github.
                     <br />
-                    <button className="bg-white bg-opacity-50 p-2 rounded-lg">
+                    <button className="bg-white bg-opacity-10 p-2 rounded-lg">
                       <a
                         href="https://github.com/amineohn/next-template/issues"
                         target="_blank"
