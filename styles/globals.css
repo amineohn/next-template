@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  @apply bg-white dark:bg-black;
+  @apply bg-white dark:bg-indigo-900;
 }
 
 a {
