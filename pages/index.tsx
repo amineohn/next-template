@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   const { data } = useSWR<Example>(`/api/example`, fetcher);
   return (
     <>
-      <FadeIn className="flex flex-col justify-center px-8 my-36 overflow-hidden">
+      <FadeIn className="flex flex-col justify-center px-8 my-32 overflow-hidden">
         <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16 dark:text-white">
           <div className="flex-col items-center">
             <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-coolGray-900 to-warmGray-600 dark:bg-gradient-to-bl dark:from-gray-50 dark:to-gray-100">
@@ -25,10 +25,7 @@ const Home: NextPage = () => {
               <div className="flex items-center font-bold text-gray-900 dark:text-gray-100">
                 API Hello
               </div>
-              <p
-                className="mt-2 text-sm font-medium text-gray-800 spacing-sm dark:text-white"
-                data-interception="off"
-              >
+              <p className="mt-2 text-sm font-medium text-gray-800 spacing-sm dark:text-white">
                 {data ? (
                   <FadeIn>{data?.name}</FadeIn>
                 ) : (
@@ -38,7 +35,7 @@ const Home: NextPage = () => {
                 )}
               </p>
             </div>
-            <div className="flex flex-col w-full overflow-y-scroll h-96">
+            <div className="flex flex-col w-full overflow-y-scroll space-y-2">
               <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
                 <a
                   href="https://nextjs.org/"
@@ -110,6 +107,32 @@ const Home: NextPage = () => {
                 </a>
               </div>
             </div>
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-full overflow-hidden transition transform metric-card max-w-72 hover:scale-95 bg-gray-100 dark:bg-white bg-opacity-50 dark:bg-opacity-20 rounded-2xl p-4">
+                <div className="flex items-center font-bold text-gray-900 dark:text-gray-100">
+                  Any issue?
+                </div>
+                <p className="mt-2 text-sm font-medium text-gray-800 spacing-sm dark:text-white">
+                  <div className="space-y-2 inline ">
+                    Please report issue on Github.
+                    <br />
+                    <button className="bg-white bg-opacity-50 p-2 rounded-lg">
+                      <a
+                        href="https://github.com/amineohn/next-template/issues"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Here
+                      </a>
+                    </button>
+                  </div>
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </FadeIn>
