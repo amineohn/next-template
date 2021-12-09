@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 const Navigation = dynamic(() => import("../components/Navigation"), {
   ssr: false,
 });
+import { configuration } from "../util/configuration";
 function MyApp({
   Component,
   pageProps,
@@ -17,8 +18,8 @@ function MyApp({
   return (
     <>
       <NextSeo
-        title="Next Template"
-        description="Template with NextJS, Tailwind, TypeScript"
+        title={configuration.title}
+        description={configuration.description}
       />
       <ThemeProvider defaultTheme="dark" attribute="class">
         <Navigation />

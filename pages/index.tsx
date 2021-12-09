@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   const { data } = useSWR<Example>(`/api/example`, fetcher);
   return (
     <>
-      <FadeIn className="flex flex-col justify-center px-8 my-32 overflow-hidden">
+      <FadeIn className="flex flex-col justify-center px-8 my-20 overflow-hidden">
         <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16 dark:text-white">
           <div className="flex-col items-center">
             <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-coolGray-900 to-warmGray-600 dark:bg-gradient-to-bl dark:from-gray-50 dark:to-gray-100">
@@ -52,6 +52,9 @@ const Home: NextPage = () => {
                       server rendering, TypeScript support, smart bundling,
                       route pre-fetching, and more. No config needed.
                     </p>
+                    <div className="flex justify-end space-y-2">
+                      <span className="text-xs font-medium">12.0.7 Stable</span>
+                    </div>
                   </div>
                 </a>
 
@@ -72,6 +75,11 @@ const Home: NextPage = () => {
                       and <br />
                       that can be composed to build any design, directly in your
                       markup.
+                      <div className="flex justify-end space-y-2">
+                        <span className="text-xs font-medium">
+                          2.2.19 Stable (3.0 is in Alpha)
+                        </span>
+                      </div>
                     </p>
                   </div>
                 </a>
@@ -87,6 +95,9 @@ const Home: NextPage = () => {
                     <p className="mt-2 text-sm font-medium text-gray-800 spacing-sm dark:text-white">
                       A JavaScript library for building user interfaces
                     </p>
+                    <div className="flex justify-end space-y-2">
+                      <span className="text-xs font-medium">18.x Beta</span>
+                    </div>
                   </div>
                 </a>
                 <a
@@ -103,6 +114,9 @@ const Home: NextPage = () => {
                       builds on JavaScript, giving you better tooling at any
                       scale.
                     </p>
+                    <div className="flex justify-end space-y-2">
+                      <span className="text-xs font-medium">4.5.2 Stable</span>
+                    </div>
                   </div>
                 </a>
               </div>
