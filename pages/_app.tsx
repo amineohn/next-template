@@ -3,12 +3,13 @@ import React from "react";
 import { ThemeProvider } from "next-themes";
 import { NextPage } from "next";
 import { NextSeo } from "next-seo";
+
 import dynamic from "next/dynamic";
 const Navigation = dynamic(() => import("../components/Navigation"), {
   ssr: false,
 });
 import { configuration } from "../util/configuration";
-function MyApp({
+export default function MyApp({
   Component,
   pageProps,
 }: {
@@ -28,4 +29,3 @@ function MyApp({
     </>
   );
 }
-export default MyApp;
