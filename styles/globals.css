@@ -1,10 +1,6 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  @apply overflow-hidden;
+  @apply m-0 p-0 font-default overflow-hidden;
 }
 
 body {
@@ -13,29 +9,29 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  @apply no-underline;
 }
 
 * {
-  box-sizing: border-box;
+  @apply box-border;
 }
 ::-webkit-scrollbar {
-  display: none;
+  @apply hidden;
 }
 ::-webkit-scrollbar-button {
-  display: none;
+  @apply hidden;
 }
 ::-webkit-scrollbar-track {
-  display: none;
+  @apply hidden;
 }
 ::-webkit-scrollbar-track-piece {
-  display: none;
+  @apply hidden;
 }
 ::-webkit-scrollbar-thumb {
-  display: none;
+  @apply hidden;
 }
 ::-webkit-scrollbar-corner {
-  display: none;
+  @apply hidden;
 }
 
 @tailwind base;
