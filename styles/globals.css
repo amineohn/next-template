@@ -1,6 +1,6 @@
 html,
 body {
-  @apply font-default bg-slate-700 h-screen;
+  @apply font-default bg-[url('/static/images/wallpaper.jpg')] bg-cover bg-center h-screen;
 }
 a {
   color: inherit;
