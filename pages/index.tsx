@@ -7,7 +7,7 @@ const Home: NextPage = () => {
       <h1 className="text-purple-300 drop-shadow-xl font-bold text-7xl">
         Next.JS
       </h1>
-      <p className="text-purple-200 drop-shadow-md text-xl">
+      <p className="text-purple-200 drop-shadow-md text-xl mx-2">
         Simple NextJS & Tailwind template aims to make it easier for you to task
         to build your web projects.
       </p>
