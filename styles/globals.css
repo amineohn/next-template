@@ -1,14 +1,5 @@
-html,
 body {
-  @apply font-default bg-[url('/static/images/wallpaper.jpg')] bg-cover bg-center h-screen;
-}
-a {
-  color: inherit;
-  @apply no-underline;
-}
-
-* {
-  @apply box-border;
+  @apply font-default bg-white h-screen;
 }
 ::-webkit-scrollbar {
   @apply hidden;
