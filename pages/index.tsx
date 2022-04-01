@@ -1,9 +1,8 @@
 import type { NextPage } from "next";
 import React from "react";
-import FadeIn from "react-fade-in";
 const Home: NextPage = () => {
   return (
-    <FadeIn className="flex flex-col justify-center items-center h-screen bg-purple-600/50 backdrop-blur-md select-none space-y-1">
+    <div className="flex flex-col justify-center items-center h-screen bg-purple-600/50 backdrop-blur-md select-none space-y-1">
       <h1 className="text-purple-300 drop-shadow-xl font-bold text-7xl">
         Next.JS
       </h1>
@@ -22,7 +21,7 @@ const Home: NextPage = () => {
           </div>
         </button>
       </a>
-    </FadeIn>
+    </div>
   );
 };
 
